@@ -59,15 +59,6 @@ body {
   padding-right: 15px;
 }
 
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.list-name {
-  margin-bottom: 8px;
-}
-
 /* Components */
 .modal-open-btn {
   font-family: inherit;
@@ -76,8 +67,6 @@ body {
 
 .modal-open-btn {
   display: block;
-  min-width: 169px;
-  height: 56px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -89,6 +78,7 @@ body {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+  padding: 16px 32px;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
@@ -99,7 +89,6 @@ body {
 }
 
 .logo {
-  margin-right: 76px;
   font-family: var(--secondary-font-family);
   font-weight: 800;
   font-size: 18px;
@@ -110,7 +99,6 @@ body {
 }
 
 .span-logo {
-  margin-right: 76px;
   font-family: var(--secondary-font-family);
   font-weight: 800;
   font-size: 18px;
@@ -197,6 +185,10 @@ body {
 
 /* About us section(2) */
 .section-about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about-list {
   display: flex;
   gap: 24px;
 }
@@ -205,12 +197,13 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.title {
+.about-title {
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
   color: var(--primary-text-color);
 }
 
@@ -223,6 +216,10 @@ body {
 }
 
 /* What are we doing section/Work(3) */
+.section-doing {
+  padding-top: 0px;
+  padding-bottom: 120px;
+}
 .work-list {
   display: flex;
   gap: 24px;
@@ -256,6 +253,7 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
   color: var(--primary-text-color);
 }
 
@@ -272,6 +270,8 @@ body {
 }
 
 .section-employees {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -303,9 +303,20 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-bg-color);
+  width: 264px;
 }
 
 /* Portfolio */
+.portfolio-title {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--primary-text-color);
+}
+
 .portfolio-section {
   padding: 96px 0 120px;
 }
