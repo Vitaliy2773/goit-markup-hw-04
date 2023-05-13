@@ -181,6 +181,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -342,6 +343,11 @@ body {
   gap: 24px;
 }
 
+.customers-list-item {
+  height: 88px;
+  width: calc((100% - 120px) / 6);
+}
+
 .customers-list-link {
   display: flex;
   justify-content: center;
@@ -351,6 +357,7 @@ body {
   padding: 16px 32px;
   border: 1px solid var(--link-customers);
   border-radius: 4px;
+  color: var(--link-customers);
 }
 
 .customers-list-logo {
@@ -358,16 +365,13 @@ body {
 }
 .customers-list-link:hover,
 .customers-list-link:focus {
+  color: var(--btn-hover-color);
   border: 1px solid var(--btn-hover-color);
 }
 
 .customers-list-link:hover .customers-list-logo,
 .customers-list-link:focus .customers-list-logo {
   fill: var(--btn-hover-color);
-}
-.customers-list-item {
-  height: 88px;
-  flex-basis: calc((100% - 120px) / 6);
 }
 
 /* Footer */
